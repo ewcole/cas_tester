@@ -1,4 +1,6 @@
 *~
 \#*\#
+.\#*
 *junk*
 build/
+.gradle/
