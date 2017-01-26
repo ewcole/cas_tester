@@ -15,8 +15,21 @@
     <body>
  
     <h1>CAS Test</h1>
- 
+
+    <style type="text/css">
+        table {
+            border: 1px solid silver;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: silver;
+            border: 2px outset silver;
+            padding: 3px 5px 3px 5px;
+        }
+    </style>
     <p>User: <%= request.getRemoteUser() %></p>
+<h2>Attributes from principal</h2>
+
 <%
  
 AttributePrincipal principal = (AttributePrincipal)request.getUserPrincipal();
@@ -24,9 +37,8 @@ AttributePrincipal principal = (AttributePrincipal)request.getUserPrincipal();
 Map attributes = principal.getAttributes();
  
 Iterator attributeNames = attributes.keySet().iterator();
- 
 out.println("<table>");
- 
+out.println("<tr><th>Attribute Name</th><th>Value</th></tr>"); 
 for (; attributeNames.hasNext();) {
 out.println("<tr><th>");
 String attributeName = (String) attributeNames.next();
