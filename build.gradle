@@ -1,7 +1,10 @@
 ext {
+  // EDIT HERE to customize for your environment
   casServerUrl = "https://my.cas.server/cas"
   serverName = "http://this.computer:8080"
-  // Where do we look for the web.xml template and file
+  // END of customization
+  
+  // Where do we look for the web.xml template and file?
   webXmlTemplate = new File('src/templates/web.xml');
   webXmlFile = new File('build/web.xml');
 }

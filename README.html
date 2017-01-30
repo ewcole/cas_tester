@@ -3,11 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2017-01-20 Fri 15:54 -->
+<!-- 2017-01-30 Mon 10:22 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
-<title>Create an app to test a CAS server. README</title>
+<title>Create an app to test a CAS server.</title>
 <meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Ed Cole" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -142,9 +143,15 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Create an app to test a CAS server. README</h1>
+<h1 class="title">Create an app to test a CAS server.</h1>
 <p>
-<a href="https://wiki.jasig.org/display/CASC/Saml11TicketValidationFilter+Example">https://wiki.jasig.org/display/CASC/Saml11TicketValidationFilter+Example</a>
+This project is a small, no-frills, web application that implements the
+<a href="https://wiki.jasig.org/display/CASC/Saml11TicketValidationFilter+Example">Saml11TicketValidationFilter Example</a> from the JASIG wiki.  The main motivation is that I need to make sure my CAS server is compatible with Ellucian's Banner single sign-on system.
+</p>
+
+
+<p>
+To use this, edit the <a href="build.gradle">build.gradle</a> file to enter the name of your  CAS server and local computer name, then run the application.  In Windows, you can navigate to the directory and execute <a href="run.cmd">run.cmd</a>.  In POSIX systems, you can use <code>gradlew jettyRun</code>.
 </p>
 </div>
 </body>
