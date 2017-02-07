@@ -4,3 +4,4 @@
 *junk*
 build/
 .gradle/
+*.log
